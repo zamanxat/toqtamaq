@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="home-page">
+      <header>
+        <div class="city">
+          <img src="images/logo-map.jpg" alt="" />
+        </div>
+        <img
+          src="images/logo-peeson.jpg"
+          alt="logo-klient"
+          class="logo-klient"
+        />
+      </header>
+      <main>
+        <div class="search">
+          <img src="images/search.svg" alt="search-logo" />
+          <input type="text" placeholder="What are u looking for ?" />
+          <img src="images/camera.svg" alt="photo-logo" />
+        </div>
+        <div class="head-ad">
+          <div class="head-main-adds">
+            <img src="images/head-add-1.jpg" alt="" />
+            <img src="images/head-add-1.jpg" alt="" />
+            <img src="images/head-add-1.jpg" alt="" />
+          </div>
+        </div>
+        <div class="category">
+          <div class="head-text-category">
+            <p>Construct your meal 😋</p>
+            <a href="#">See all</a>
+          </div>
+          <div class="back-category">
+            <div class="vbox-category">
+              <div class="icon-category">🥦</div>
+              <p>Base</p>
+            </div>
+            <div class="vbox-category">
+              <div class="icon-category">🍖</div>
+              <p>Proteins</p>
+            </div>
+            <div class="vbox-category">
+              <div class="icon-category">🥜</div>
+              <p>Add-ons</p>
+            </div>
+            <div class="vbox-category">
+              <div class="icon-category">🫕</div>
+              <p>Dressings</p>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-home">
+          <div class="head-text-catalog-home">
+            <p>Based on your preferences:</p>
+            <a href="#">See all</a>
+          </div>
+
+          <div class="product">
+            <div
+              class="product-box"
+              data-name="KALE Caesar"
+              data-price="000"
+              data-image="foods/KALE Caesar.jpg"
+            >
+              <div class="end">
+                <img
+                  src="images/camera.svg"
+                  alt="photo-logo"
+                  class="photo-product-icon"
+                />
+              </div>
+              <div class="center">
+                <img
+                  src="foods/KALE Caesar.jpg"
+                  alt="KALE Caesar"
+                  class="food-photo"
+                />
+              </div>
+              <div class="end">
+                <button class="add-btn">
+                  <img src="images/plus.jpg" alt="add-product-icon" />
+                </button>
+              </div>
+              <p class="price-style">000 KZT</p>
+              <p class="name-style">KALE Caesar</p>
+            </div>
+            <div
+              class="product-box"
+              data-name="Strawberry Smoothie"
+              data-price="000"
+              data-image="foods/Strawberry  Smoothie.jpg"
+            >
+              <div class="end">
+                <img
+                  src="images/camera.svg"
+                  alt="photo-logo"
+                  class="photo-product-icon"
+                />
+              </div>
+              <div class="center">
+                <img
+                  src="foods/Strawberry  Smoothie.jpg"
+                  alt="Strawberry Smoothie"
+                  class="food-photo"
+                />
+              </div>
+              <div class="end">
+                <button class="add-btn">
+                  <img src="images/plus.jpg" alt="add-product-icon" />
+                </button>
+              </div>
+              <p class="price-style">000 KZT</p>
+              <p class="name-style">Strawberry Smoothie</p>
+            </div>
+            <div
+              class="product-box"
+              data-name="Toffee Crunch"
+              data-price="000"
+              data-image="foods/Toffee Crunch.jpg"
+            >
+              <div class="end">
+                <img
+                  src="images/camera.svg"
+                  alt="photo-logo"
+                  class="photo-product-icon"
+                />
+              </div>
+              <div class="center">
+                <img
+                  src="foods/Toffee Crunch.jpg"
+                  alt="Toffee Crunch"
+                  class="food-photo"
+                />
+              </div>
+              <div class="end">
+                <button class="add-btn">
+                  <img src="images/plus.jpg" alt="add-product-icon" />
+                </button>
+              </div>
+              <p class="price-style">000 KZT</p>
+              <p class="name-style">Toffee Crunch</p>
+            </div>
+            <div
+              class="product-box"
+              data-name="Apple Pie"
+              data-price="000"
+              data-image="foods/Apple Pie.jpg"
+            >
+              <div class="end">
+                <img
+                  src="images/camera.svg"
+                  alt="photo-logo"
+                  class="photo-product-icon"
+                />
+              </div>
+              <div class="center">
+                <img
+                  src="foods/Apple Pie.jpg"
+                  alt="Apple Pie"
+                  class="food-photo"
+                />
+              </div>
+              <div class="end">
+                <button class="add-btn">
+                  <img src="images/plus.jpg" alt="add-product-icon" />
+                </button>
+              </div>
+              <p class="price-style">000 KZT</p>
+              <p class="name-style">Apple Pie</p>
+            </div>
+          </div>
+
+          <!-- POPUP -->
+
+          <div class="product-popup" style="display: none">
+            <div class="popup-content">
+              <div class="head-popup">
+                <button class="close-popup">＜</button>
+                <div
+                  class="search"
+                  style="
+                    width: 75%;
+                    height: 40px;
+                    border: 1px solid #f5f5f5;
+                    border-radius: 20px;
+                    display: flex;
+                    align-items: center;
+                    padding: 0 20px;
+                    box-sizing: border-box;
+                  "
+                >
+                  <img
+                    src="images/search.svg"
+                    alt="search-logo"
+                    style="height: 18px; width: 18px"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Search products..."
+                    style="
+                      flex: 1;
+                      height: 30px;
+                      border: none;
+                      outline: none;
+                      font-size: 12px;
+                      margin: 0 10px;
+                      font-family: 'Arial', sans-serif;
+                    "
+                  />
+                </div>
+              </div>
+
+              <div class="end">
+                <div
+                  class="backko"
+                  style="
+                    border: 1px solid #f5f5f5;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 12px;
+                    margin-right: 20px;
+                    border-radius: 50%;
+                    margin-bottom: -10px;
+                  "
+                >
+                  <img
+                    src="images/camera.svg"
+                    alt="camera"
+                    style="width: 20px; height: 20px"
+                  />
+                </div>
+              </div>
+              <div class="center">
+                <img class="popup-image" src="" alt="" />
+              </div>
+              <img src="images/line.jpg" alt="line" class="line-photo" />
+
+              <div class="ret">
+                <p class="popup-price"></p>
+                <h2 class="popup-name"></h2>
+                <p class="popup-desc"></p>
+              </div>
+
+              <div class="footer-for-popup">
+                <button class="popup-add-cart">Add to cart</button>
+
+                <div class="birdiv2">
+                  <div class="birdiv">
+                    <div class="popup-total-black" style="display: none">
+                      Total price:
+                    </div>
+                    <p class="popup-total" style="display: none">0 KZT</p>
+                  </div>
+                  <div class="popup-counter" style="display: none">
+                    <button class="minus-btn">−</button>
+                    <span class="count">1pcs</span>
+                    <button class="plus-btn">+</button>
+                  </div>
+                </div>
+              </div>
+              <footer>
+                <div class="back home-icon actived">
+                  <img
+                    src="footer/home-act.jpg"
+                    alt="home-icon"
+                    class="active"
+                  />
+                </div>
+                <div class="back catalog-icon">
+                  <img src="footer/catalog.jpg" alt="catalog-icon" />
+                </div>
+                <div class="back cart-icon">
+                  <img src="footer/cart.jpg" alt="cart-icon" />
+                </div>
+                <div class="back orders-icon">
+                  <img src="footer/orders.jpg" alt="orders-icon" />
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="back home-icon actived">
+          <img src="footer/home-act.jpg" alt="home-icon" class="active" />
+        </div>
+        <div class="back catalog-icon">
+          <img src="footer/catalog.jpg" alt="catalog-icon" />
+        </div>
+        <div class="back cart-icon">
+          <img src="footer/cart.jpg" alt="cart-icon" />
+        </div>
+        <div class="back orders-icon">
+          <img src="footer/orders.jpg" alt="orders-icon" />
+        </div>
+      </footer>
+    </div>
+
+    <div class="catalog-page">
+      каталог
+      <footer>
+        <div class="back home-icon">
+          <img src="footer/home.jpg" alt="home-icon" class="active" />
+        </div>
+        <div class="back catalog-icon actived">
+          <img src="footer/catalog-act.jpg" alt="catalog-icon" />
+        </div>
+        <div class="back cart-icon">
+          <img src="footer/cart.jpg" alt="cart-icon" />
+        </div>
+        <div class="back orders-icon">
+          <img src="footer/orders.jpg" alt="orders-icon" />
+        </div>
+      </footer>
+    </div>
+    <div class="cart-page">
+      <div class="head-search-only">
+        <button class="close-only">＜</button>
+        <div
+          class="search"
+          style="
+            width: 75%;
+            height: 50px;
+            border: 1px solid #f5f5f5;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            box-sizing: border-box;
+          "
+        >
+          <img
+            src="images/search.svg"
+            alt="search-logo"
+            style="height: 18px; width: 18px"
+          />
+          <input
+            type="text"
+            placeholder="Search products..."
+            style="
+              flex: 1;
+              height: 30px;
+              border: none;
+              outline: none;
+              font-size: 12px;
+              margin: 0 10px;
+              font-family: 'Arial', sans-serif;
+            "
+          />
+        </div>
+      </div>
+
+      <div class="cart-main">
+        <p class="cart-empty-text">Your cart is empty</p>
+
+        <div class="cart-items-container"></div>
+
+        <div class="cart-footer">
+          <p class="cart-total-price">Total: 0 KZT</p>
+          <button class="checkout-btn">Checkout</button>
+        </div>
+      </div>
+
+      <footer>
+        <div class="back home-icon">
+          <img src="footer/home.jpg" alt="home-icon" class="active" />
+        </div>
+        <div class="back catalog-icon">
+          <img src="footer/catalog.jpg" alt="catalog-icon" />
+        </div>
+        <div class="back cart-icon actived">
+          <img src="footer/cart-act.jpg" alt="cart-icon" />
+        </div>
+        <div class="back orders-icon">
+          <img src="footer/orders.jpg" alt="orders-icon" />
+        </div>
+      </footer>
+    </div>
+    <div class="orders-page">
+      ордеры
+      <footer>
+        <div class="back home-icon">
+          <img src="footer/home.jpg" alt="home-icon" class="active" />
+        </div>
+        <div class="back catalog-icon">
+          <img src="footer/catalog.jpg" alt="catalog-icon" />
+        </div>
+        <div class="back cart-icon">
+          <img src="footer/cart.jpg" alt="cart-icon" />
+        </div>
+        <div class="back orders-icon actived">
+          <img src="footer/order-act.jpg" alt="orders-icon" />
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
